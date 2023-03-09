@@ -15,11 +15,15 @@ dotfiles:
   d_sxhkd:
     src: config/sxhkd
     dst: ~/.config/sxhkd
+  d_gtk-3.0:
+    src: config/gtk-3.0
+    dst: ~/.config/gtk-3.0
 profiles:
   general:
     dotfiles:
     - f_starship.toml
     - d_kitty
+    - d_gtk-3.0
   bspwm:
     dotfiles:
     - d_bspwm
