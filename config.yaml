@@ -9,8 +9,18 @@ dotfiles:
   f_starship.toml:
     dst: ~/.config/starship.toml
     src: config/starship.toml
+  d_bspwm:
+    src: config/bspwm
+    dst: ~/.config/bspwm
+  d_sxhkd:
+    src: config/sxhkd
+    dst: ~/.config/sxhkd
 profiles:
   general:
     dotfiles:
     - f_starship.toml
     - d_kitty
+  bspwm:
+    dotfiles:
+    - d_bspwm
+    - d_sxhkd
