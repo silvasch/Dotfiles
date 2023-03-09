@@ -18,12 +18,16 @@ dotfiles:
   d_gtk-3.0:
     src: config/gtk-3.0
     dst: ~/.config/gtk-3.0
+  d_fonts:
+    src: fonts
+    dst: ~/.fonts
 profiles:
   general:
     dotfiles:
     - f_starship.toml
     - d_kitty
     - d_gtk-3.0
+    - d_fonts
   bspwm:
     dotfiles:
     - d_bspwm
