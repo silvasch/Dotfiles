@@ -21,6 +21,12 @@ dotfiles:
   d_fonts:
     src: fonts
     dst: ~/.fonts
+  f_env.nu:
+    src: config/nushell/env.nu
+    dst: ~/.config/nushell/env.nu
+  f_config.nu:
+    src: config/nushell/config.nu
+    dst: ~/.config/nushell/config.nu
 profiles:
   general:
     dotfiles:
@@ -28,6 +34,8 @@ profiles:
     - d_kitty
     - d_gtk-3.0
     - d_fonts
+    - f_env.nu
+    - f_config.nu
   bspwm:
     dotfiles:
     - d_bspwm
