@@ -3,6 +3,9 @@ config:
   create: true
   dotpath: dotfiles
 dotfiles:
+  d_kitty:
+    dst: ~/.config/kitty
+    src: config/kitty
   f_starship.toml:
     dst: ~/.config/starship.toml
     src: config/starship.toml
@@ -10,3 +13,4 @@ profiles:
   general:
     dotfiles:
     - f_starship.toml
+    - d_kitty
