@@ -3,4 +3,10 @@ config:
   create: true
   dotpath: dotfiles
 dotfiles:
+  f_starship.toml:
+    src: config/starship.toml
+    dst: ~/.config/starship.toml
 profiles:
+  silva-arch:
+    dotfiles:
+    - f_starship.toml
