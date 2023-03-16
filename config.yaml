@@ -27,6 +27,9 @@ dotfiles:
   f_config.nu:
     src: config/nushell/config.nu
     dst: ~/.config/nushell/config.nu
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
 profiles:
   general:
     dotfiles:
@@ -40,3 +43,6 @@ profiles:
     dotfiles:
     - d_bspwm
     - d_sxhkd
+  i3:
+    dotfiles:
+    - d_i3
