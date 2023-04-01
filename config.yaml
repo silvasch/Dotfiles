@@ -30,6 +30,12 @@ dotfiles:
   d_i3:
     src: config/i3
     dst: ~/.config/i3
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  d_oh-my-zsh:
+    src: oh-my-zsh
+    dst: ~/.oh-my-zsh
 profiles:
   general:
     dotfiles:
@@ -39,6 +45,8 @@ profiles:
     - d_fonts
     - f_env.nu
     - f_config.nu
+    - f_zshrc
+    - d_oh-my-zsh
   bspwm:
     dotfiles:
     - d_bspwm
